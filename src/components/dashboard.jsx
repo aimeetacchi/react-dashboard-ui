@@ -1,19 +1,23 @@
-import React, { Component } from 'react'
-
+import React, { Component } from 'react';
+import Notes from './notes';
 import Sidebar from './sideBar';
-import Createuser from './createUser';
 import User from './user';
 
 
 export default class dashboard extends Component {
   render() {
     return (
-      <div>
-        dashboard
+      <div className="dashboard_container">
         
         <Sidebar/>
-        <Createuser/>
-        <User/>
+
+        <div className="dashboard__overview">
+            <div> Hi, /Username/, you are viewing your dashboard. </div>
+
+          <User/>
+          <Notes/>
+        </div>
+      
 
       </div>
     )

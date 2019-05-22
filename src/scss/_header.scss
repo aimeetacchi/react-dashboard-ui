@@ -4,10 +4,16 @@ header {
     align-items: center;
     height: 10vh;
     background-color: $color1;
+
+    .logo {
+        padding: 20px;
+        width: 150px;
+        display:block;
+    }
 }
-nav.main-nav {
-    background-color: #f1f1f1;
-    border: 1px solid green;
+nav.main_nav {
+    background-color: $color_light;
+    border: 1px solid $color1;
     position: absolute;
     top: 0;
     left: 0;
@@ -52,7 +58,7 @@ nav.main-nav {
     position: relative;
     z-index: 2;
     height: 3px;
-    background-color: #f1f1f1;
+    background-color: $color_light;
     transition: all .2s ease-out;
     transform-origin: top left;
     border-radius: 20px;
@@ -76,7 +82,7 @@ nav.main-nav {
 .nav-items {
     font-size: 3em;
     font-weight: 700;
-    //font-family: "Fjalla One", sans-serif;
+    font-family: $mainFont;
     list-style: none;
     height: 100vh;
     margin: 0;
@@ -109,7 +115,7 @@ nav.main-nav {
     padding: 1em 0;
     width:100%;
     text-align: center;
-    border: 1px solid purple;
+    border: 1px solid $color2;
 }
 
 .nav-items li a {
@@ -125,6 +131,6 @@ nav.main-nav {
 }
 
 .nav-items li a:hover {
-    color: blue;
+    color: $color3;
     text-decoration: underline;
 }

@@ -1,9 +1,19 @@
 .dashboard_container {
     display:flex;
-   
+    
+    .dashboard_inner_container {
+        width:100%;
+        margin: 20px;
+    }
 
     .dashboard__overview {
-        background-color: #f1f1f1;
         width:100%;
+        padding: 20px 0;
+
+        @media(min-width: $tablet){
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 20px;
+        }
     }
 }

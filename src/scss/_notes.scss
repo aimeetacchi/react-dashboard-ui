@@ -1,0 +1,9 @@
+.note_container {
+    margin-top: 20px;
+    background-color: $color_light;
+    border-radius:20px;
+    
+    @media(min-width: $tablet){
+        margin-top: 0;
+    }
+}

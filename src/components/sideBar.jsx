@@ -7,10 +7,10 @@ export default class sideBar extends Component {
         <h2>Dashboard</h2>
 
         <nav className="sidenav">
-          <a> Link </a>
-          <a> Link </a>
-          <a> Link </a>
-          <a> Link </a>
+          <p> Link </p>
+          <p> Link </p>
+          <p> Link </p>
+          <p> Link </p>
         </nav>
       </div>
     )

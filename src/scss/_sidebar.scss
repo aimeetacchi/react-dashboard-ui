@@ -1,17 +1,23 @@
 .sidebar-container {
-    text-align: center;
-    width: 300px;
+    display:none;
+
+    @media(min-width: $tablet){
+        display:block;
+        text-align: center;
+        width: 300px;
+    }
 
     .sidenav {
        height: 80vh;
-         a {
+         a, p {
             display: block;
             margin: .5em 0 .5em .5em;
             text-align: center;
             padding: .5em;
             border-top-left-radius: 20px;
             border-bottom-left-radius: 20px;
-            background-color: palegreen;
+            background-color: $color2;
+            color: $color_light;
         }
     }
 }

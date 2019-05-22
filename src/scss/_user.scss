@@ -1,0 +1,40 @@
+.user_container {
+    padding: 20px;
+    background-color: $color_light;
+    position: relative;
+    border-radius: 20px;
+}
+
+.user__avatar {
+    
+    img {
+        border-radius: 100%;
+        border:1px solid black;
+        width:200px;
+        margin: 0 auto;
+        display:block;
+        @media(min-width: $tablet){
+            width: 200px;
+            margin: 0;
+        }
+      
+    }
+}
+
+.user__info {
+
+    p {
+        padding: 0;
+        margin: 0;
+    }
+}
+
+.fa-edit  {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    &:hover {
+
+    }
+}
